@@ -4,7 +4,6 @@ function estimateYesterdayPercent() {
 
     var previousTPV = $("#mTotalPendingVal").text() - todayProfit;
 
-    console.log("yesterday tpv: " + previousTPV + ", yesterday profit: " + yesterdayProfit + ", todayProfit: " + todayProfit);
     var prevPercentCalc = (yesterdayProfit/(previousTPV - yesterdayProfit)*100).toFixed(2);
     var prevPercent = prevPercentCalc + '%';
     if (yesterdayProfit !== "")
